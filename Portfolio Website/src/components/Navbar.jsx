@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -26,6 +28,9 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
+          <button className="menu-btn" onClick={() => {}}>
+            <FontAwesomeIcon icon={faBars} />
+          </button>
         </div>
       </nav>
     </>
