@@ -1,18 +1,27 @@
-$--bg-color: #151925;
-$--accent-color: #01eeff;
-$--text-color: #fff;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+$bg-color: #151925;
+$accent-color: #01eeff;
+$text-color: #fff;
+
+$font-family-base: "Poppins", sans-serif;
+$secondary-font: "Inter", sans-serif;
 
 body {
-  background-color: $--bg-color;
+  background-color: $bg-color;
+  font-family: $font-family-base;
 }
 
 .navbar-wrapper {
-  color: $--text-color;
+  font-family: $secondary-font;
+  color: $text-color;
   padding: 0.5rem 0;
   position: sticky;
   top: 0;
   z-index: 30;
   backdrop-filter: blur(50px);
+  transform: translateY(-1.5rem); /* `rem` for responsivess */
 }
 
 .content {
@@ -22,10 +31,27 @@ body {
   justify-content: space-between;
   padding: 1rem 0;
   margin: 0 auto;
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+  }
+
+  li {
+    margin: 0 1.5rem;
+  }
 
   h5 {
     font-size: 24px;
     font-weight: bold;
     height: auto;
   }
+}
+
+.nav-item {
+  text-decoration: none;
+  color: $text-color;
+  margin: 0 1rem;
+  font-size: 15px;
 }
