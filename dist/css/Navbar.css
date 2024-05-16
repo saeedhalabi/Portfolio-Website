@@ -70,3 +70,46 @@ body {
   visibility: visible;
   transform: scaleX(1);
 }
+
+.menu-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+  line-height: 0;
+  cursor: pointer;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+  display: none;
+}
+.menu-btn:hover {
+  background: linear-gradient(112.1deg, rgb(63, 76, 119) 11.4%, rgb(32, 38, 57) 70.2%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 425px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  h5 {
+    padding: 0 15px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .content ul {
+    display: none;
+  }
+}
+@media (max-width: 1325px) {
+  .navbar-wrapper {
+    padding: 0 2rem;
+  }
+}
