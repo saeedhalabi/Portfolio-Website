@@ -15,7 +15,7 @@ const Home = () => {
       <section className="hero">
         <img src={SaeedAura} alt="" className="hero-img" />
       </section>
-      <button className="btn-download">
+      <button className="btn-download" id="resume">
         <a href={resume} download className="cv-download">
           Download CV
         </a>
