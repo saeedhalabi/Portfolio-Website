@@ -38,10 +38,11 @@ const Contact = () => {
 
     // Prepare email template parameters using form data
     const templateParams = {
-      to_name: "Recipient Name", // Replace with the actual recipient name if needed
+      to_name: "Recipient Name",
       from_name: `${formData.fname} ${formData.lname}`, // Combine first name and last name
       from_email: formData.email, // Use the email from the form
       message: formData.message, // Use the message from the form
+      mobileNumber: formData.mobile,
     };
 
     // Send email using EmailJS API
