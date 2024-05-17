@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.scss";
 import SaeedAura from "../assets/saeedaura.png";
+import resume from "../assets/CV.pdf";
 const Home = () => {
   return (
     <div className="hero-title" id="home">
@@ -14,7 +15,11 @@ const Home = () => {
       <section className="hero">
         <img src={SaeedAura} alt="" className="hero-img" />
       </section>
-      <button className="cv-download">Download CV</button>
+      <button className="btn-download">
+        <a href={resume} download className="cv-download">
+          Download CV
+        </a>
+      </button>
     </div>
   );
 };
