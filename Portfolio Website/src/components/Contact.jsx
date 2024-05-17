@@ -25,6 +25,17 @@ const Contact = () => {
   const handleSubmit = e => {
     e.preventDefault(); // Prevent default form submission behavior
 
+    // Check if any of the required fields are empty
+    if (
+      !formData.fname ||
+      !formData.lname ||
+      !formData.email ||
+      !formData.message
+    ) {
+      alert("Please fill out all required fields.");
+      return;
+    }
+
     // Prepare email template parameters using form data
     const templateParams = {
       to_name: "Recipient Name", // Replace with the actual recipient name if needed
