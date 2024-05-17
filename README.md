@@ -83,9 +83,9 @@ portfolio
 ## Contact
 Feel free to reach out to me through the contact form on my website or connect with me on social media:
 
-Email: saeedrhalabi@gmail.com
-LinkedIn: linkedin.com/in/saeedhalabi
-Twitter: @saeedhalabi_
+- Email: saeedrhalabi@gmail.com
+- LinkedIn: [https://linkedin.com/in/saeedhalabi](https://www.linkedin.com/in/saeed-halabi/)
+- Twitter: @saeedhalabi_
 
 # License
 This project is licensed under the MIT License. See the LICENSE file for details.
