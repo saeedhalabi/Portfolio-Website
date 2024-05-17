@@ -4,4 +4,39 @@ $accent-color: #01eeff;
 .contact {
   background-color: $backgroundColor;
   margin-top: 50px;
+  padding: 20px;
+}
+
+input[type="text"] {
+  color: #fff;
+}
+
+input,
+textarea {
+  padding: 8px 15px; /* Adjusted padding for mobile */
+  background-color: #323846;
+  border: none;
+  outline: transparent;
+  border-radius: 5px;
+  color: #fff;
+  width: 100%; /* Full width on mobile */
+  max-width: 400px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+textarea {
+  height: 150px; /* Reduced height for mobile */
+}
+
+.submit-btn {
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  /* Adjustments for tablets and larger screens */
+  .contact {
+    padding: 40px;
+  }
 }
