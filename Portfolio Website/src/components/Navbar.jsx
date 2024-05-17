@@ -1,35 +1,83 @@
-import React from "react";
+// Navbar.js
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.scss";
 
 const Navbar = () => {
+  // State to manage the visibility of the mobile menu
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+  // Function to handle navigation item click
+  const handleNavigationClick = () => {
+    setShowMobileMenu(false); // Close the mobile menu
+  };
+
   return (
     <>
+      {/* Navbar component */}
       <nav className="navbar-wrapper">
         <div className="content">
+          {/* Brand/logo */}
           <h5>Saeed.</h5>
-          <ul>
+          {/* Main menu */}
+          <ul className={`main-menu ${showMobileMenu ? "active" : ""}`}>
             <li>
-              <a href="#" className="nav-item">
+              <a
+                href="#home"
+                className="nav-item"
+                onClick={handleNavigationClick}
+              >
                 Home
               </a>
-              <a href="#" className="nav-item">
+            </li>
+            <li>
+              <a
+                href="#about"
+                className="nav-item"
+                onClick={handleNavigationClick}
+              >
                 About
               </a>
-              <a href="#" className="nav-item">
+            </li>
+            <li>
+              <a
+                href="#resume"
+                className="nav-item"
+                onClick={handleNavigationClick}
+              >
                 Resume
               </a>
-              <a href="#" className="nav-item">
+            </li>
+            <li>
+              <a
+                href="#projects"
+                className="nav-item"
+                onClick={handleNavigationClick}
+              >
                 Projects
               </a>
-              <a href="#" className="nav-item">
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className="nav-item"
+                onClick={handleNavigationClick}
+              >
                 Contact
               </a>
             </li>
           </ul>
-          <button className="menu-btn" onClick={() => {}}>
-            <FontAwesomeIcon icon={faBars} />
+          {/* Mobile menu toggle button */}
+          <button
+            onClick={() => setShowMobileMenu(!showMobileMenu)}
+            className="menu-btn"
+          >
+            {showMobileMenu ? (
+              <FontAwesomeIcon icon={faTimes} />
+            ) : (
+              <FontAwesomeIcon icon={faBars} />
+            )}
           </button>
         </div>
       </nav>
