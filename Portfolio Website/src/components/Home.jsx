@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.scss";
 import SaeedAura from "../assets/saeedaura.png";
-import resume from "../assets/CV.pdf";
+import resume from "../assets/Saeed Halabi Front End CV.pdf";
 const Home = () => {
   return (
     <div className="hero-title" id="home">
