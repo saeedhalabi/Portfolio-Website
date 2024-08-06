@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./Home.scss";
 import SaeedAura from "../assets/saeedaura.png";
-import resume from "../assets/Saeed Halabi Front End CV.pdf";
+import resume from "../assets/SaeedHalabiResume.pdf";
 
 const Home = () => {
   return (
@@ -36,6 +36,7 @@ const Home = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
+          loading="lazy"
         />
       </section>
       <motion.button
