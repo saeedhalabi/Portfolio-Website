@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./Home.scss";
 import SaeedAura from "../assets/saeedaura.png";
-import resume from "../assets/SaeedHalabiResume.pdf";
+import resume from "../assets/Saeed_Frontend_Developer_Resume.pdf";
 
 const Home = () => {
   return (
