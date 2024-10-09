@@ -85,7 +85,7 @@ Feel free to reach out to me through the contact form on my website or connect w
 
 - Email: saeedrhalabi@gmail.com
 - LinkedIn: [https://linkedin.com/in/saeedhalabi](https://www.linkedin.com/in/saeed-halabi/)
-- Twitter: @saeedhalabi_
+- Twitter / 𝕏: @saeedhalabi_
 
 # License
 This project is licensed under the MIT License. See the LICENSE file for details.
