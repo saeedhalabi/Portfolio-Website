@@ -2,9 +2,8 @@ import React from "react";
 import "./Projects.scss";
 import BrewBuddy from "../assets/brewbuddy-pic.jpeg";
 import TheQuest from "../assets/thequest.jpeg";
-import FortniteTimeWarp from "../assets/fn-timewarp.jpeg";
-import TicTacToe from "../assets/tic_tac_toe.jpg";
-
+import EvolveLab from "../assets/evolvelab.jpeg";
+import DragonRepeller from "../assets/dragonrepeller.jpeg";
 const Projects = () => {
   const projects = [
     {
@@ -17,18 +16,19 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Tic Tac Toe",
-      description: "Tic Tac Toe: A Classic Game of Strategy and Fun",
-      image: TicTacToe,
-      liveLink: "https://saeedhalabi-tic-tac-toe-game.netlify.app/",
+      title: "Dragon Repeller",
+      description:
+        "Dragon Repeller is an interactive web app where users strategically deploy defenses to protect their kingdom from mythical dragons.",
+      image: DragonRepeller,
+      liveLink: "https://game-rpg-dragon-repeller.netlify.app/",
     },
     {
       id: 3,
-      title: "Fortnite TimeWarp",
+      title: "Evolve Lab",
       description:
-        "a simple and friendly website where I share my gaming journey, fun moments with friends, and connect with other gamers.",
-      image: FortniteTimeWarp,
-      liveLink: "https://fortnite-gaming-timeline.netlify.app/",
+        "Evolve Lab is a React application that enables users to submit, filter, and vote on innovative ideas with a responsive and engaging interface.",
+      image: EvolveLab,
+      liveLink: "https://evolve-lab.netlify.app/",
     },
     {
       id: 4,
