@@ -25,8 +25,7 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
       >
-        Specializing in Frontend, I leverage cutting-edge <br /> technologies to
-        bring web projects to life.
+        I leverage cutting-edge technologies to bring web projects to life.
       </motion.p>
       <section className="hero">
         <motion.img
@@ -36,7 +35,6 @@ const Home = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-          loading="lazy"
         />
       </section>
       <motion.button
