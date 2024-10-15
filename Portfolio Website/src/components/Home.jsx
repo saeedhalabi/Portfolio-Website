@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import { motion } from "framer-motion";
 import "./Home.scss";
 import SaeedAura from "../assets/saeedaura.png";
@@ -29,8 +29,9 @@ const Home = () => {
       </motion.p>
       <section className="hero">
         <motion.img
+          loading="lazy"
           src={SaeedAura}
-          alt=""
+          alt="Saeed Halabi Profile Picture"
           className="hero-img"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}

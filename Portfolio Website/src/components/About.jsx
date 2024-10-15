@@ -10,7 +10,7 @@ const About = () => {
         <h3>
           <span>About</span> Me
         </h3>
-        <img src={line} alt="Line" className="line" />
+        <img src={line} alt="Line" className="line" loading="lazy" />
         <p>
           Hello! I'm Saeed Halabi, a frontend web developer passionate about
           crafting beautiful, <br /> user-friendly interfaces. I stay updated
@@ -20,7 +20,12 @@ const About = () => {
         </p>
       </div>
       <div className="image-container">
-        <img src={aboutImage} alt="About Me" className="about-image" />
+        <img
+          src={aboutImage}
+          alt="About Me"
+          className="about-image"
+          loading="lazy"
+        />
       </div>
     </div>
   );

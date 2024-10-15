@@ -1,4 +1,3 @@
-// Navbar.js
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -72,6 +71,8 @@ const Navbar = () => {
           <button
             onClick={() => setShowMobileMenu(!showMobileMenu)}
             className="menu-btn"
+            aria-label={showMobileMenu ? "Close menu" : "Open menu"}
+            aria-expanded={showMobileMenu}
           >
             {showMobileMenu ? (
               <FontAwesomeIcon icon={faTimes} />
